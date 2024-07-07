@@ -12,7 +12,7 @@ import org.jetbrains.annotations.Nullable;
 
 /**
  * You can find protocol and data version
- * at <a href="https://minecraft.gamepedia.com/Protocol_version">Minecraft protocol versions</a>
+ * at <a href="https://minecraft.wiki/w/Module:Protocol_version/Versions">Minecraft protocol versions</a>
  */
 @ToString
 @SuppressWarnings({"squid:S00100", "squid:S1192", "unused"})
@@ -23,6 +23,7 @@ public enum ServerVersion {
     NEXT    ("next", null, Short.MAX_VALUE,Short.MAX_VALUE, false),
 
     // Add here the following versions ...
+    V1_21   ("1.21",    getRawServerVersion("v1_21_R1"), 767, 3953, false),
     V1_20_2 ("1.20.2",  getRawServerVersion("v1_20_R2"), 764, 3578, false),
     V1_20_1 ("1.20.1",  getRawServerVersion("v1_20_R1"), 763, 3465, false),
     V1_20   ("1.20",    getRawServerVersion("v1_20_R1"), 763, 3463, false),
