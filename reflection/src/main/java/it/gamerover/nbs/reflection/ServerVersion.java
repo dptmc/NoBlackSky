@@ -263,6 +263,13 @@ public enum ServerVersion {
         return v1.dataVersion >= v2.dataVersion;
     }
 
+    public static boolean is1_21(@NotNull ServerVersion version) {
+        switch (version) {
+            case V1_21: return true;
+            default: return false;
+        }
+    }
+
     public static boolean is1_20(@NotNull ServerVersion version) {
         switch (version) {
             case V1_20:
